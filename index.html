@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device_width">
+	<title>↗📽️💡↘ ↝ DIPLORAMAX ⇴ ↗💡📽️↘</title>
+<!--	<link rel="icon" type="image/png" href="../image/etoiledeux.png" />-->
+	<link rel="stylesheet" type="text/css" href="PROJET/STYLE/style_menu.css"> 
+
+
+
+
+</head>
+
+<body id="body">
+
+
+
+
+
+	  	<div id="entete">
+
+<!--<div id="retour">
+    <a href="../../A_PROPOS/index.html"class="retour"><span id="emoji"> </span>&nbsp;à propos</a>
+</div> -->
+
+
+ <div id="les_yeux" >
+  <svg>
+      <g id="Eyes">
+  <ellipse class="d" cx="16" cy="33" rx="15.5" ry="32.5"/>
+  <ellipse class="d" cx="42.5" cy="33.5" rx="15.5" ry="32.5"/>
+  <ellipse id="leftEye" cx="8.24" cy="33.13" rx="7.24" ry="9.13"/>
+  <ellipse class="d" cx="42.5" cy="33.5" rx="15.5" ry="32.5"/>
+  <ellipse id="rightEye" cx="35.26" cy="33.13" rx="7.24" ry="9.13"/>
+      </g>
+      <defs>
+    </svg>
+    
+  </div>
+
+<div id="nom"></div>
+<div id="titre">
+  <div class="content-slider">
+  <div class="slider">
+    <div class="mask">
+      <ul>
+        <li class="anim1">
+          <div class="quote"><span class="fleche_titre">>></span> BONJOUR!</div>
+        </li>
+        <li class="anim2">
+          <div class="quote"><span class="fleche_titre">>></span> BONJOUR!</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>		
+	</div>
+	
+	<div id="corps">
+<div div="ligne1" class="ligne">
+	<div id="colonne1A" class="colonne" ><a href="PROJET/DIPLORAMAX/index_diploramax.html"><div id="img1" class="image"></div> <div class="legende">diploramax</div></a></div>
+	<div id="colonne1B" class="colonne" ></div>
+	<div id="colonne1C" class="colonne" ></div>
+	<div id="colonne1D" class="colonne" ></div>
+	<div id="colonne1E" class="colonne" >
+		<div class="legende">Nous sommes Rafaël Têtedoie et Eléonore Sense, Blablabla</div>
+	</div>
+</div>
+<div id="ligne2" class="ligne">
+	<div id="colonne2A" class="colonne" ></div>
+	<div id="colonne2B" class="colonne" ><a href="PROJET/UNAMED_ROAD/index_unamed_road.html" class="pop"><div class="bloc_blanc"><div id="img6" class="image"></div> <div class="legende">unamed road festival</div></div></a></div>
+	<div id="colonne2C" class="colonne" ></div>
+	<div id="colonne2D" class="colonne" ></div>
+
+	<div id="colonne2E" class="colonne" style="padding: 0;">
+		<div id="barre"></div>
+		    <div id="mail" class="ligne_contact">
+    <font face="Wingdings" class="emoji_contact"></font> <a href="mailto:rafael_eleonore@proton.me" id="mail_txt">rafael_eleonore@proton.me</a>
+    </div>
+
+        <div id="insta" class="ligne_contact">
+    <font face="Wingdings" class="emoji_contact"></font> <div><a href="https://www.instagram.com/rafael_tetedoie/"><div id="insta_txt">@rafael_tetedoie</div></a> <a href="https://www.instagram.com/bonjourbonjour62/"><div id="insta_txt">@bonjourbonjour62</div></a></div>
+    </div>
+
+        <div id="tel" class="ligne_contact" >
+    <font face="Wingdings" class="emoji_contact" id="emoji_tel"></font> <div id="tel_txt">07.07.07.07.07</div>
+    </div>
+	</div>
+</div>
+
+
+
+</div>
+
+
+	</body>
+
+
+	<script>
+
+
+onmousemove = function(e){
+  if(document.getElementById("rightEye").dataset.xValue === undefined) {
+    document.getElementById("rightEye").dataset.xValue = Math.round(document.getElementById("rightEye").getBoundingClientRect().left) + 9;
+    document.getElementById("rightEye").dataset.yValue = Math.round(document.getElementById("rightEye").getBoundingClientRect().top) + 9;
+    document.getElementById("leftEye").dataset.xValue = Math.round(document.getElementById("leftEye").getBoundingClientRect().left) + 9;
+    document.getElementById("leftEye").dataset.yValue = Math.round(document.getElementById("leftEye").getBoundingClientRect().top) + 9;   
+  }
+  var rightEyeElement = document.getElementById("rightEye");
+  var rightEye = {
+    x:document.getElementById("rightEye").dataset.xValue,
+    y:document.getElementById("rightEye").dataset.yValue,
+  }
+  var leftEye = {
+    x:document.getElementById("leftEye").dataset.xValue,
+    y:document.getElementById("leftEye").dataset.yValue,
+  }
+  
+  var finalRightEyeXOffset = 0;
+  var finalRightEyeYOffset = 0;
+  var finalLeftEyeXOffset = 0;
+  var finalLeftEyeYOffset = 0;
+  var leftEyeXOffset = leftEye.x - e.clientX;
+  var leftEyeYOffset = leftEye.y - e.clientY;
+  var rightEyeXOffset = leftEyeXOffset;
+  var rightEyeYOffset = leftEyeYOffset;
+
+
+  if(rightEyeXOffset <= 0  && rightEyeXOffset >= -13) {
+    finalRightEyeXOffset = rightEyeXOffset * -1;
+    finalLeftEyeXOffset = leftEyeXOffset * -1;
+  }
+
+  else if(rightEyeXOffset < -13) {
+    finalRightEyeXOffset = 13;
+    finalLeftEyeXOffset = 13;
+  }
+  
+
+  if(rightEyeYOffset > 0  && rightEyeYOffset <= 17) {
+    finalRightEyeYOffset = rightEyeYOffset * -1;
+    finalLeftEyeYOffset = leftEyeYOffset * -1;
+  }
+  else if(rightEyeYOffset < 0  && rightEyeYOffset >= -17) {
+    finalRightEyeYOffset = rightEyeYOffset * -1;
+    finalLeftEyeYOffset = leftEyeYOffset * -1;
+  }
+  else if(rightEyeYOffset > 17) {
+    finalRightEyeYOffset = -17;
+    finalLeftEyeYOffset = -17;
+  }
+  else if(rightEyeYOffset < -17) {
+    finalRightEyeYOffset = 17;
+    finalLeftEyeYOffset = 17;
+  }
+  
+
+
+  document.getElementById("rightEye").style.transform = "translate(" + finalRightEyeXOffset + "px, " + finalRightEyeYOffset + "px)"; 
+  document.getElementById("leftEye").style.transform = "translate(" + finalLeftEyeXOffset + "px, " + finalLeftEyeYOffset + "px)";
+  
+
+};
+
+function bouger_boite(){
+    if ( $('#boite_contact').css('marginLeft') == '0px' ) {
+      $("#boite_contact").animate({"margin-left" : '270px', "margin-top" : '200px'});
+    }else if ($('#boite_contact').css('marginLeft') == '270px' ){
+      $("#boite_contact").animate({"margin-left" : '20px', "margin-top" : '130px'}); 
+    }else{       
+    }
+};
+
+
+
+    </script>
+	</html>
