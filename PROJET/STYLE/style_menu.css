@@ -243,13 +243,30 @@ p.direction{
 
 
 #corps{
-  display: block;
+  display: flex;
   height: 95vh;
   width: 100vw;
   position: relative;
   margin-top: 40px;
 }
+#mosaique{
+  height: 100%;
+  width: 80vw;
+  position: relative;
+}
 
+
+
+#blabla{
+    height: 95vh;
+  width: 20vw;
+    position: fixed;
+    right: 0;
+}
+.colonne_blabla{
+      border-bottom: solid black 1px;
+  height: 50%;
+}
 .ligne{
   height: 50%;
   border-bottom: solid black 1px;
@@ -258,16 +275,60 @@ p.direction{
 
 .colonne{
   height: 100%;
-  width: 20%;
+  width: 25%;
   border-right: solid black 1px;
 }
 
 #img1{
   background-image: url("../DIPLORAMAX/image/6.jpg");
 }
-#img6{
-  background-image: url("../UNAMED_ROAD/image/8.jpg");
+#img2{
+  background-image: url("../MAISON/image/1.jpg");
 }
+#img3{
+  background-image: url("../ANGERS/image/4.jpg");
+}
+#img4{
+  background-image: url("../BANC_CAMP/image/8.jpg");
+}
+#img5{
+  background-image: url("../MACHINE_HISTOIRE/image/1.jpg");
+}
+#img6{
+  background-image: url("../MEMOIRE/image/1.jpg");
+}
+
+#img7{
+  background-image: url("../GAITE/image/0.jpg");
+}
+#img8{
+  background-image: url("../UNAMED_ROAD/image/3.jpg");
+}
+#img9{
+  background-image: url("../TENTE/image/2.jpg");
+}
+#img10{
+  background-image: url("../TABLE/image/1.jpg");
+}
+#img11{
+  background-image: url("../ACTA/image/1.jpg");
+}
+#img12{
+  background-image: url("../DRAPEAU_CAMP/image/1.jpg");
+}
+#img13{
+  background-image: url("../STRUCTURE/image/1.jpg");
+}
+#img14{
+  background-image: url("../ULTRANET/image/1.jpg");
+}
+#img15{
+  background-image: url("../SCENORAMA/image/1.jpg");
+}
+#img16{
+  background-image: url("../DISCOURS_POLITIQUE/image/5.jpg");
+}
+
 
 .legende{
   margin-top: 7px;
@@ -279,7 +340,7 @@ p.direction{
 .image{
   background-repeat: none;
   background-size: cover;
-  background-color: red;
+  background-color: darkblue;
   background-position: center;
 
   height: 89%;
@@ -299,11 +360,11 @@ a:hover{
     border: solid black 1px;
     transform: translate(10px, -10px);
       background-color: rgb(245, 245, 245);
+      z-index: 20;
 }
 
 
 .bloc_blanc{
-
   width: 100%;
   height: 100%;
   position: relative;
