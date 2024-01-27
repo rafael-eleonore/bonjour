@@ -1,8 +1,8 @@
 
 #photo1{
-  padding-top:50px ;
-  height:65vh;
-  margin: 40px;
+  margin-top:100px ;
+  height:75vh;
+  margin-left: 40px;
 
 
 }
@@ -10,21 +10,22 @@
 
 
 #photo2 {
-height: 35vh;
+height: 45vh;
   margin-left: 80px;
-  top: -100px;
+  top: -80px;
 
 }
 
 #photo3 {
-  height:80vh;
+  height:70vh;
   margin-left: 120px;
+  margin-top: 60px;
 
 }
 
 
 #photo4 {
-  height:70vh;
+  height:60vh;
   margin-left: 50px;
   margin-top: 150px;
 
@@ -35,14 +36,15 @@ height: 35vh;
   height:40vh;
   margin-left: 80px;
   margin-top: 170px;
+  top: 80px;
 
 }
 
 
 #photo6 {
   height: 70vh;
-  margin-left: 200px;
-  margin-top: 80px;
+  margin-left: 100px;
+  margin-top: 200px;
 }
 
 
@@ -50,7 +52,6 @@ height: 35vh;
 height: 40vh;
   margin-left: 50px;
   top: 90px;
-  margin-bottom: 200px;
 
 }
 
@@ -59,6 +60,21 @@ height: 40vh;
   height:65vh;
   margin-left: 80px;
   margin-top: 70px;
+}
+
+#photo9 {
+height: 15vh;
+  margin-left: 50px;
+  top: 30px;
+  margin-bottom: 200px;
+
+}
+
+
+#photo10 {
+  height:40vh;
+  margin-left: 60px;
+  margin-top: 270px;
 margin-bottom: 200px;
 }
 
