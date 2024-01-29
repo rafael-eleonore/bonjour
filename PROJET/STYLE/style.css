@@ -105,23 +105,19 @@ p.espace:hover{
 
 }
 
-#retour{
-  margin-top: 5px;
-  font-size: 0.4em;
-  position: absolute;
-  right: 20px;
-  z-index: 20;
-}
+
 
 .retour{
   color: black;
   text-decoration: none;
-  display: flex;
-}
+  display: flex;}
 
-.retour:hover {
+
+.blop:hover {
   text-decoration: underline;
 }
+
+
 
   #blocphoto{
     position: relative;
@@ -467,6 +463,68 @@ p.txt{
 
 .pix{position: relative;}
 
+
+
+
+
+  #lien{
+    cursor:move;
+    background-color: white;
+    border: solid rgb(0,0,0) 1px;
+padding: 15px;
+padding-right: 25px;
+    position:fixed;
+    right: 3%;
+    bottom:6%;
+    font-size: 0.8em;
+  animation: move 60s linear infinite;
+  width: fit-content;
+  height: fit-content;
+
+  }
+
+  .emoji {
+      font-family: Wingdings;
+    font-size: 1.5em;
+margin-top: -3px;
+text-decoration: none;
+  }
+
+  .emoji:hover{
+    text-decoration: none;
+  }
+
+@keyframes move {
+  0% {
+    right: 5%;
+    bottom:6%;
+  }
+  18.8% {
+    right: 5%;
+    bottom:6%;
+  }
+
+    19.4% {
+    right: 7%;
+    bottom:9%;
+  }
+    20% {
+    right: 5%;
+    bottom:12%;
+  }
+      20.6% {
+    right: 7%;
+    bottom:15%;
+  }
+      21.2% {
+    right: 5%;
+    bottom:18%;
+  }
+        99.9% {
+    right: 5%;
+    bottom:18%;
+  }
+}
 
 
 
