@@ -1,7 +1,7 @@
 
 #photo1{
   padding-top:50px ;
-  width:70%;
+  height: 70vh;
   margin: 40px;
 
 
@@ -49,6 +49,29 @@ margin-bottom: 30px;
 
 
 
+
+#photo7{
+  height:80vh;
+  margin: 40px;
+  margin-left: 50px;
+}
+
+
+
+#photo8 {
+  height:70vh;
+  margin-left: 80px;
+  margin-top: 160px;
+
+}
+
+#photo9 {
+  height:55vh;
+  top: 120px;
+  left: 150px;
+  margin-bottom: 200px;
+
+}
 
 
 
