@@ -48,12 +48,12 @@ html, body{
 margin: 0;
  font-family: Amie_round;
 color: rgb(0,0,0);
+overflow-x: hidden;
+  background: rgb(245,245,245) ;
+  width: 100vw;
 }
 
 
-#body{
-	background: rgb(245,245,245) ;
-}
 
 
 	#entete{
@@ -289,13 +289,13 @@ p.direction{
   background-image: url("../ANGERS/image/4.jpg");
 }
 #img4{
-  background-image: url("../BANC_CAMP/image/8.jpg");
+  background-image: url("../BANC_CAMP/image/1.jpg");
 }
 #img5{
-  background-image: url("../MACHINE_HISTOIRE/image/1.jpg");
+  background-image: url("../MACHINE_HISTOIRE/image/12.jpg");
 }
 #img6{
-  background-image: url("../MEMOIRE/image/1.jpg");
+  background-image: url("../DRAPEAU_CAMP/image/6.jpg");
 }
 
 #img7{
@@ -314,7 +314,7 @@ p.direction{
   background-image: url("../ACTA/image/1.jpg");
 }
 #img12{
-  background-image: url("../DRAPEAU_CAMP/image/1.jpg");
+  background-image: url("../MEMOIRE/image/1.jpg");
 }
 #img13{
   background-image: url("../STRUCTURE/image/1.jpg");
