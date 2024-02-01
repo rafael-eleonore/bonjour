@@ -1,21 +1,21 @@
 @font-face {
-	    font-family: 'Apfel';
-	    src: url("apfelgrotezk-regular-webfont.woff") format('woff'),
-	         url("apfelgrotezk-regular-webfont.ttf") format('truetype');
-	    font-style: normal;
+      font-family: 'Apfel';
+      src: url("apfelgrotezk-regular-webfont.woff") format('woff'),
+           url("apfelgrotezk-regular-webfont.ttf") format('truetype');
+      font-style: normal;
 
-	}
+  }
 
 }
 
-	@font-face {
-	    font-family: 'Wingdings';
-	    src: url('wingding.ttf') format('truetype'),
-	         url('wingding.svg') format('svg');
-	    font-weight: normal;
-	    font-style: normal;
+  @font-face {
+      font-family: 'Wingdings';
+      src: url('wingding.ttf') format('truetype'),
+           url('wingding.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
 
-	}
+  }
   @font-face {
       font-family: 'Authentic';
       src: url("Amiamie-Regular.woff") format('woff');
@@ -31,15 +31,15 @@
 
 
 #emoji{
-	text-decoration: none;
-	font-family: Wingdings;
-	color: rgb(0,0,0);
-	font-size: 1em;
+  text-decoration: none;
+  font-family: Wingdings;
+  color: rgb(0,0,0);
+  font-size: 1em;
 }
 
 
 
-	*, *:before, *:after {
+  *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -56,11 +56,11 @@ overflow-x: hidden;
 
 
 
-	#entete{
+  #entete{
     font-family: Amie_round;
     left: 0;
     z-index: 3;
-			background: rgb(245,245,245) ;
+      background: rgb(245,245,245) ;
  font-size: 2em;
  color:black;
 text-decoration: none;
@@ -83,40 +83,19 @@ border-bottom: 1px solid;
 
 
 #corps{
-	height:  100vh;
-	width:100vw;
-	  display: flex;
-  flex-direction: row;
+  height:  100vh;
+  width:100vw;
+    display: block;
 
-}
-
-
-
-#retour{
-  margin-top: 5px;
-  font-size: 0.4em;
-  position: absolute;
-  right: 20px;
-  z-index: 20;
-}
-
-.retour{
-  color: black;
-  text-decoration: none;
-  display: flex;
-}
-
-.retour:hover {
-  text-decoration: underline;
 }
 
 
 
 p.direction{
   z-index: 0;
-	font-size: 0.7em;
-	padding-top: 20px;
-		text-align: center;
+  font-size: 0.7em;
+  padding-top: 20px;
+    text-align: center;
 }
 
 .lien_copain{
@@ -159,7 +138,7 @@ p.direction{
   position: absolute;
   top: -200px;
   list-style: none;
-  	z-index: 5;
+    z-index: 5;
     padding-left: 0.6%;
 }
 
@@ -243,40 +222,41 @@ p.direction{
 
 
 #corps{
-  display: flex;
+  display: block;
   height: 95vh;
   width: 100vw;
   position: relative;
-  margin-top: 40px;
+  margin-top: 42px;
 }
 #mosaique{
   height: 100%;
-  width: 80vw;
+  width: 100vw;
   position: relative;
+
 }
 
 
 
 #blabla{
-    height: 95vh;
-  width: 20vw;
-    position: fixed;
-    right: 0;
+  width: 100vw;
+    position: relative;
+    right: 0;  
+
 }
 .colonne_blabla{
       border-bottom: solid black 1px;
-  height: 50%;
 }
 .ligne{
-  height: 50%;
-  border-bottom: solid black 1px;
-  display: flex;
+  display: block;  
 }
 
 .colonne{
-  height: 100%;
-  width: 25%;
-  border-right: solid black 1px;
+width: 95vw;
+margin-left: 10px;
+height: 70vh;
+border-bottom: solid black 1px; 
+border-left: solid black 1px; 
+border-right: solid black 1px;    
 }
 
 #img1{
@@ -331,10 +311,10 @@ p.direction{
 
 
 .legende{
-  margin-top: 7px;
+  margin-top: 12px;
   font-size: 0.8em;
   margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .image{
@@ -367,6 +347,9 @@ a:hover{
 .bloc_blanc{
   width: 100%;
   height: 100%;
+  padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
   position: relative;
 }
 
@@ -421,7 +404,20 @@ margin-left: 10px;
   -webkit-text-stroke: 0.6px black;
 }
 
+#colonne1E, #colonne2E{
+
+  display: none;
+}
 
 #blabla_tel{
-  display: none;
+  display: block;
+  width: 100vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px black;
+}
+
+#txt_intro{
+  padding-bottom: 20px;
+  width: 90vw;
 }
