@@ -112,8 +112,16 @@ p.espace:hover{
 #corps{
   height:  100vh;
   width:100vw;
-  text-align: center;
-  padding-top: 50px;
+  text-align: center; 
+  padding-top: 24px;
+  padding-bottom: 60px;
+
+}
+#corps_long{
+  height:  100vh;
+  width:100vw;
+  text-align: center; 
+  padding-top: 52px;
   padding-bottom: 60px;
 
 }
@@ -636,3 +644,11 @@ text-decoration: none;
 
 
 
+#titre_plante{
+  font-size: 0.9em;
+}
+
+#titre_ultra{
+  font-size: 0.65em;
+  hyphens: auto;
+}
