@@ -81,6 +81,12 @@ border-bottom: 1px solid;
 }
 
 
+#fleche{
+  font-size: 1.3em;
+}
+
+
+
 
 #corps{
   height:  100vh;
@@ -232,6 +238,7 @@ p.direction{
   height: 100%;
   width: 100vw;
   position: relative;
+  margin-top: 18px;
 
 }
 
@@ -415,9 +422,144 @@ margin-left: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: solid 1px black;
+  font-size: 1.4em;
 }
 
 #txt_intro{
   padding-bottom: 20px;
   width: 90vw;
 }
+
+
+
+
+
+/*animation sous direction*/
+.content-slider-direction {
+  width: 100%;
+  height: 2em;
+}
+
+.slider-direction {
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  position: relative;
+}
+
+.mask-direction {
+  overflow: hidden;
+  height: 37px;
+}
+
+.slider-direction ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.slider-direction li {
+  width: 100%;
+  height: 1em;
+  position: absolute;
+  right: -200px;
+  list-style: none;
+}
+
+.slider-direction .quote-direction {
+    font-size: 0.7em;
+}
+
+.slider-direction li.direction-anim1 {
+  -webkit-animation: cycleDirection 20s linear infinite;
+          animation: cycleDirection 20s linear infinite;
+}
+
+
+.slider-direction li.direction-anim2{
+  -webkit-animation: cycleDirectionDeux 20s linear infinite;
+          animation: cycleDirectionDeux 20s linear infinite;
+}
+
+.slider-direction li.direction-anim3{
+  -webkit-animation: cycleDirectionTrois 20s linear infinite;
+          animation: cycleDirectionTrois 20s linear infinite;
+}
+
+
+@-webkit-keyframes cycleDirection {
+  0% {
+    right: -1em;
+  }
+
+    50% {
+    right: 0em;
+  }
+
+      100% {
+    right: 0em;
+  }
+
+}
+
+@keyframes cycleDirection {
+  0% {
+    right: 29em;
+  }
+
+      100% {
+    right: -9em;
+  }
+
+}
+
+@-webkit-keyframes cycleDirectionDeux {
+  0% {
+    right: -10em;
+  }
+
+      100% {
+    right: -60em;
+  }
+
+
+}
+
+@keyframes cycleDirectionDeux {
+  0% {
+    right: 10em;
+  }
+
+      100% {
+    right: -28em;
+  }
+
+
+}
+
+
+@-webkit-keyframes cycleDirectionTrois {
+  0% {
+    right: -29em;
+  }
+
+      100% {
+    right: -60em;
+  }
+
+
+}
+
+@keyframes cycleDirectionTrois {
+  0% {
+    right: -9em;
+  }
+
+      100% {
+    right: -47em;
+  }
+
+
+}
+
+

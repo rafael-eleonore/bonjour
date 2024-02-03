@@ -98,11 +98,37 @@ doIt();
 	
 	<div id="corps">
 
-    <div id="blabla_tel">   <div class="legende" id="txt_intro">Nous sommes Rafaël Têtedoie et Eléonore Sense, un duo d'artiste-designer. <br>
-    Rafaël travaille blablabla.
-    <br>Eléonore cherche à décrypter l’intangible sous différentes formes: performances, installations contemplatives ou actives pour ses spectateur·ices. Elle crée des outils pour permettre à d’autres de s’approprier des savoirs et des connaissances peu accessibles en tentant de déconstruire des systèmes complexes, notamment autour de certains domaines du numérique.
-    <br><br>Ensemble, iels cherchent à mettre en scène, créer des moments, accompagner jsp quoi </div>
+    <div id="blabla_tel"> 
+ <div id="fleche">
+        <div class="content-slider-direction">
+  <div class="slider-direction">
+    <div class="mask-direction">
+      <ul>
+        <li class="direction-anim1">
+          <div class="quote-direction"> <span id="emoji"></span> &nbsp;ce site est plus agréable sur ordinateur &nbsp;<span id="emoji"></span>&nbsp;&nbsp;///</div>
+        </li>
+        <li class="direction-anim2">
+          <div class="quote-direction"><span id="emoji"></span> &nbsp;ce site est plus agréable sur ordinateur &nbsp;<span id="emoji"></span>&nbsp;&nbsp;///</div>
+        </li>
 
+        <li class="direction-anim3">
+          <div class="quote-direction"><span id="emoji"></span> &nbsp;ce site est plus agréable sur ordinateur &nbsp;<span id="emoji"></span>&nbsp;&nbsp;///</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+   </div>
+    </div>
+
+      <div class="legende" id="txt_intro">
+      Nous sommes Rafaël Têtedoie et Eléonore Sense, un duo d'artiste-designer. <br>
+Rafaël travaille sur à la mise en forme de dispositif d’accueil de publics et de mise en scène.
+Par son approche technique, il propose des dispositifs poétiques et narratifs pour proposer de nouveaux usages tout en attribuant une grande importance à la sobriété matérielle de ses mises en forme.
+
+    <br>Eléonore cherche à décrypter l’intangible sous différentes formes: performances, installations contemplatives ou actives pour ses spectateur·ices. 
+  Elle crée des outils pour permettre à d’autres de s’approprier des savoirs et des connaissances peu accessibles en tentant de déconstruire des systèmes complexes, notamment autour de certains domaines du numérique.
+    <br><br>Ensemble, nous cherchons à rassembler autour de moments des publics qui ne se côtoient pas forcément et à créer des événements festifs et conviviaux.
+</div>
         <div id="barre"></div>
         <div id="mail" class="ligne_contact">
     <font face="Wingdings" class="emoji_contact"></font> <a href="mailto:rafael_eleonore@proton.me" id="mail_txt">rafael_eleonore@proton.me</a>
@@ -117,6 +143,7 @@ doIt();
     </div>
 
 </div>
+</div>
 
 <div id="mosaique">
 <div div="ligne1" class="ligne">
@@ -124,6 +151,7 @@ doIt();
 	<div id="colonne1B" class="colonne" ><a href="PROJET/MAISON/index_maison.html" class="pop"><div class="bloc_blanc"><div id="img2" class="image"></div> <div class="legende">modellone X Olivier Vadrot</div></div></a></div>
 	<div id="colonne1C" class="colonne" ><a href="PROJET/ANGERS/index_angers.html" class="pop"><div class="bloc_blanc"><div id="img3" class="image"></div> <div class="legende">plantes voisines, explorations en chemin</div></div></a></div>
 	<div id="colonne1D" class="colonne" ><a href="PROJET/BANC_CAMP/index_banc_camp.html" class="pop"><div class="bloc_blanc"><div id="img4" class="image"></div> <div class="legende">mobilier X C.A.M.P.</div></div></a></div>
+</div>
 </div>
 <div id="ligne2" class="ligne">
 	<div id="colonne2A" class="colonne" ><a href="PROJET/MACHINE_HISTOIRE/index_machine_histoire.html" class="pop"><div class="bloc_blanc"><div id="img5" class="image"></div> <div class="legende">la fabrique à histoires collectives</div></div></a></div>
@@ -156,10 +184,16 @@ doIt();
 <div id="blabla">
   <div id="position_fixed">
 <div id="colonne1E" class="colonne_blabla" >
+
+
 		<div class="legende">Nous sommes Rafaël Têtedoie et Eléonore Sense, un duo d'artiste-designer. <br>
-		Rafaël travaille blablabla.
-		<br>Eléonore cherche à décrypter l’intangible sous différentes formes: performances, installations contemplatives ou actives pour ses spectateur·ices. Elle crée des outils pour permettre à d’autres de s’approprier des savoirs et des connaissances peu accessibles en tentant de déconstruire des systèmes complexes, notamment autour de certains domaines du numérique.
-		<br><br>Ensemble, iels cherchent à mettre en scène, créer des moments, accompagner jsp quoi </div>
+Rafaël travaille sur à la mise en forme de dispositif d’accueil de publics et de mise en scène.
+Par son approche technique, il propose des dispositifs poétiques et narratifs pour proposer de nouveaux usages tout en attribuant une grande importance à la sobriété matérielle de ses mises en forme.
+
+		<br>Eléonore cherche à décrypter l’intangible sous différentes formes: performances, installations contemplatives ou actives pour ses spectateur·ices. 
+  Elle crée des outils pour permettre à d’autres de s’approprier des savoirs et des connaissances peu accessibles en tentant de déconstruire des systèmes complexes, notamment autour de certains domaines du numérique.
+		<br><br>Ensemble, nous cherchons à rassembler autour de moments des publics qui ne se côtoient pas forcément et à créer des événements festifs et conviviaux.
+</div>
 	</div>
 
 
@@ -189,69 +223,6 @@ doIt();
 
 	<script>
 
-
-onmousemove = function(e){
-  if(document.getElementById("rightEye").dataset.xValue === undefined) {
-    document.getElementById("rightEye").dataset.xValue = Math.round(document.getElementById("rightEye").getBoundingClientRect().left) + 9;
-    document.getElementById("rightEye").dataset.yValue = Math.round(document.getElementById("rightEye").getBoundingClientRect().top) + 9;
-    document.getElementById("leftEye").dataset.xValue = Math.round(document.getElementById("leftEye").getBoundingClientRect().left) + 9;
-    document.getElementById("leftEye").dataset.yValue = Math.round(document.getElementById("leftEye").getBoundingClientRect().top) + 9;   
-  }
-  var rightEyeElement = document.getElementById("rightEye");
-  var rightEye = {
-    x:document.getElementById("rightEye").dataset.xValue,
-    y:document.getElementById("rightEye").dataset.yValue,
-  }
-  var leftEye = {
-    x:document.getElementById("leftEye").dataset.xValue,
-    y:document.getElementById("leftEye").dataset.yValue,
-  }
-  
-  var finalRightEyeXOffset = 0;
-  var finalRightEyeYOffset = 0;
-  var finalLeftEyeXOffset = 0;
-  var finalLeftEyeYOffset = 0;
-  var leftEyeXOffset = leftEye.x - e.clientX;
-  var leftEyeYOffset = leftEye.y - e.clientY;
-  var rightEyeXOffset = leftEyeXOffset;
-  var rightEyeYOffset = leftEyeYOffset;
-
-
-  if(rightEyeXOffset <= 0  && rightEyeXOffset >= -13) {
-    finalRightEyeXOffset = rightEyeXOffset * -1;
-    finalLeftEyeXOffset = leftEyeXOffset * -1;
-  }
-
-  else if(rightEyeXOffset < -13) {
-    finalRightEyeXOffset = 13;
-    finalLeftEyeXOffset = 13;
-  }
-  
-
-  if(rightEyeYOffset > 0  && rightEyeYOffset <= 17) {
-    finalRightEyeYOffset = rightEyeYOffset * -1;
-    finalLeftEyeYOffset = leftEyeYOffset * -1;
-  }
-  else if(rightEyeYOffset < 0  && rightEyeYOffset >= -17) {
-    finalRightEyeYOffset = rightEyeYOffset * -1;
-    finalLeftEyeYOffset = leftEyeYOffset * -1;
-  }
-  else if(rightEyeYOffset > 17) {
-    finalRightEyeYOffset = -17;
-    finalLeftEyeYOffset = -17;
-  }
-  else if(rightEyeYOffset < -17) {
-    finalRightEyeYOffset = 17;
-    finalLeftEyeYOffset = 17;
-  }
-  
-
-
-  document.getElementById("rightEye").style.transform = "translate(" + finalRightEyeXOffset + "px, " + finalRightEyeYOffset + "px)"; 
-  document.getElementById("leftEye").style.transform = "translate(" + finalLeftEyeXOffset + "px, " + finalLeftEyeYOffset + "px)";
-  
-
-};
 
 function bouger_boite(){
     if ( $('#boite_contact').css('marginLeft') == '0px' ) {
