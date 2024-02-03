@@ -260,7 +260,7 @@ p.direction{
 #blabla{
     height: 95vh;
   width: 20vw;
-    position: fixed;
+    position: relative;
     right: 0;
 }
 .colonne_blabla{
@@ -424,4 +424,11 @@ margin-left: 10px;
 
 #blabla_tel{
   display: none;
+}
+
+#position_fixed{
+  margin-top: 10px;
+  height: 95vh;
+  position: fixed;
+
 }
